@@ -5,6 +5,7 @@ clear
 #install flatpak
 echo "installing flatpak"
 sudo dnf install flatpak
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 #remove extra software
 echo "removing the following packages: *libreoffice collection* *cheese* *rhythmbox* *connections* *simple-scan*"
 sudo ./extras-remove.sh
